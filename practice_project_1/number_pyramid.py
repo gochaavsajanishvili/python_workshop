@@ -33,5 +33,6 @@ def inverted_pyramid():
 
 
 if __name__ == '__main__':
+    # Main
     number_pyramid()
     inverted_pyramid()
