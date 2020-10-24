@@ -26,16 +26,48 @@ def my_join(lst1, obj):
 # Task N_2
 
 
-# def my_insert(lst, obj, index):
-#     temp = lst[index:len(lst) - 1]
-#     lst[index] = obj
-#     print(temp)
-#     for i in temp:
-#         lst[index + 1] += i
-#     return lst
+def my_insert(lst1, obj, index):
+    first_half = lst1[0:index]
+    second_half = lst1[index:len(lst1)]
 
-# print(my_insert(lst, 'lado', 1))
+    first_half += [obj]
+    new_lst = first_half + second_half
 
+    print(new_lst)
+
+
+my_insert(lst, 'lado', 2)
+
+
+# Task N_3
+# With del method
+
+
+def my_pop(lst1, index=-1):
+    last_obj = lst1[index]
+    del lst1[index]
+    return last_obj
+
+# Without del method
+
+
+def my_pop_no_del(lst1, index=-1):
+    first_half = lst1[0:index]
+    if index >= 0:
+        second_half = lst1[index+1:len(lst1)]
+        new_lst = first_half + second_half
+        lst1 = new_lst
+    else:
+        return first_half
+    return lst1
+
+# With del test
+# print(my_pop(lst))
+# print(lst)
+
+# Without del test
+# lst = my_pop_no_del(lst, 3)
+# print(lst)
 
 # Task N_5
 
