@@ -19,6 +19,26 @@ def my_join(lst1, obj):
             return join
         else:
             join += i + obj
+            
+            
+
+def my_join(lst1, sep=''):
+    # shortest
+    join = '' 
+    for i in lst1[:-1]:
+        join += i + sep
+    
+    return join + lst1[-1]
+
+def my_join(lst1, sep):
+    # with enumerate
+    join = ''
+    last = len(lst1)
+    for index, item in enumerate(lst1, start=1):
+        if index == last:
+            return join + item
+
+        join += item + sep
 
 
 # print(my_join(lst, '_<3_'))
