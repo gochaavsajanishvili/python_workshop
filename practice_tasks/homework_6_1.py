@@ -54,6 +54,9 @@ def my_insert(lst1, obj, index):
     new_lst = first_half + second_half
 
     print(new_lst)
+    
+def my_insert(lst1, obj, index):
+    return lst1[:index] + [obj] + lst1[index:]
 
 
 # my_insert(lst, 'lado', 2)
