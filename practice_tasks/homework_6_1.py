@@ -84,6 +84,12 @@ def my_pop_no_del(lst1, index=-1):
         return first_half
     return lst1
 
+
+def my_pop_no_del(lst1, index=-1):
+    first_half = lst1[:index]
+    second_half = lst1[index+1:]    
+    print(first_half + second_half)
+    return lst1[index]
 # With del test
 # print(my_pop(lst))
 # print(lst)
