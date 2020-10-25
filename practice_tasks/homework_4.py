@@ -15,31 +15,25 @@ def sequence(up_to):
 # Task A
 
 
-def upper_triangles(up_to):
-    for i in range(1, up_to + 1):
-        print('#', end='')
-
-
-def lower_triangles(down_to):
-    for i in range(down_to, 0, -1):
-        print('#', end='')
+def h_repeated(n):
+    print('#' * n, end='')
 
 
 def hash_triangles():
     for i in range(1, 9):
         spaces(9 - i)
-        upper_triangles(i)
+        h_repeated(i)
         print(' ', end='')
-        upper_triangles(i)
+        h_repeated(i)
         print()
 
     print()
 
     for i in range(1, 9):
         spaces(i)
-        lower_triangles(9 - i)
+        h_repeated(9 - i)
         print(' ', end='')
-        lower_triangles(9 - i)
+        h_repeated(9 - i)
         print()
 
 
