@@ -40,14 +40,10 @@ def hash_triangles():
 # Task B
 
 
-def numbered_sequence(up_to):
-    for i in range(0, up_to):
-        print(i, end='')
-
-
 def number_triangle():
     for i in range(0, 10):
-        numbered_sequence(i + 1)
+        for j in range(0, i+1):
+            print(j, end='')
         print()
 
 
