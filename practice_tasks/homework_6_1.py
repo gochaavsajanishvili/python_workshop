@@ -111,6 +111,13 @@ def my_remove(lst1, obj):
             counter += 1
     return new_lst
 
+def my_remove(lst1, obj):
+    assert obj in lst1, 'obj not in list'
+
+    for index, item in enumerate(lst1):
+        if item == obj:
+            return lst1[:index] + lst1[index+1:]
+
 
 # lst = my_remove(lst, 'mishiko')
 # print(lst)
