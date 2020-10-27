@@ -10,7 +10,7 @@ def hanoi(n, start: str, end: str):
             {end} -> {middle}
             {end} -> {start}
             {middle} -> {start}
-            {start} -> {end}
+            {middle} -> {end}
             {start} -> {middle}
             {start} -> {end}
             {middle} -> {end}
